@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:WXN_Injector"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="theme/ButtonTheme.xaml"/>
+                <ResourceDictionary Source="theme/TextboxTheme.xaml"/>
+                <ResourceDictionary Source="theme/Scrollbar.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

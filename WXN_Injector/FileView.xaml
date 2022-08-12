@@ -5,8 +5,35 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WXN_Injector"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="90" d:DesignWidth="343">
     <Grid>
+        <StackPanel Orientation="Horizontal" Name="FileSelectedPanel" Visibility="Hidden">
+            <Image Source="https://cdn-icons-png.flaticon.com/512/337/337930.png"
+                   Margin="10"/>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                <Label Content="Filename" Name="label_Filename" FontSize="15" Foreground="White"/>
+                <Label Content="FileSize" Name="label_filesize" FontSize="15" Foreground="White"/>
+            </StackPanel>
+            
+        </StackPanel>
+        <Button Style="{StaticResource UniversalMaterialButton}"
+                Height="25" Width="100" Content="Inject" Background="#2c2e36"
+                VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,5,5"
+                Name="InjectButton" Visibility="Hidden"
+                Click="InjectButton_OnClick">
+            
+        </Button>
+        <DockPanel HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button Style="{StaticResource SomeButtonStyle}" 
+                    Height="20" Width="20" Name="CloseFileBtn" Visibility="Hidden" 
+                    Click="CloseFileBtn_OnClick">
+                <StackPanel>
+                    <Image Source="Images\red.png" Margin="1"/>
+                </StackPanel>
+            </Button>
+        </DockPanel>
+        <Button Name="EmptyPanel" Visibility="Hidden" Margin="70,30,70,30" Style="{StaticResource UniversalMaterialButton}"
+                Background="#2c2e36" Content="Select File" Click="EmptyPanel_OnClick"/>
         
     </Grid>
 </UserControl>
