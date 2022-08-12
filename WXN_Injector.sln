@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WXN_Injector", "WXN_Injector\WXN_Injector.csproj", "{ECCF6466-BAF9-43E2-A05E-3A90147A2244}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECCF6466-BAF9-43E2-A05E-3A90147A2244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCF6466-BAF9-43E2-A05E-3A90147A2244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCF6466-BAF9-43E2-A05E-3A90147A2244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCF6466-BAF9-43E2-A05E-3A90147A2244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
